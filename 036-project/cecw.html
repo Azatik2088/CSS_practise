@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки для учебы</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #2e86c1;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        p.subtitle {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .card {
+            width: 45%;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            float: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            width: calc(50% - 20px);
+            /* Вычисляемая ширина с учетом отступов */
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            float: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                clear: both;
+            }
+        } */
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 20px);
+                /* Вычисляемая ширина на мобильных устройствах */
+                clear: both;
+                /* Очистка float на мобильных устройствах */
+            }
+        }
+
+        .project-description {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ссылки для ориентирования</h1>
+
+    <div class="card">
+        <a href="https://para.kai.ru/schedule" target="_blank">
+            <img src="kapipara.jpg" width="300" height="200" alt="Капипара">
+        </a>
+        <p>Капипара</p>
+        <p class="project-description">Сайт для просмотра расписания моих занятий</p>
+    </div>
+
+    <div class="card">
+        <a href="https://para.kai.ru/schedule" target="_blank">
+            <img src="bb.jpg" width="300" height="200" alt="бэбэкаи">
+        </a>
+
+        <p>Сама учеба</p>
+        <p class="project-description">Здесь можно чекнуть задания, баллы и так далее</p>
+    </div>
+
+    <div class="card">
+        <a href="https://para.kai.ru/schedule" target="_blank">
+            <img src="KAI.jpg" width="300" height="200" alt="Каи">
+        </a>
+
+        <p>Сайт самого КАИ</p>
+        <p class="project-description">Здесь можно все сразу посмотреть)</p>
+    </div>
+
+    <div style="clear: both;"></div> <!-- Очистка float для избежания проблем с высотой -->
+
+</body>
+
+</html>
